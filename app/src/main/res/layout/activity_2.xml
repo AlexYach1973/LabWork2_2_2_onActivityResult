@@ -13,7 +13,7 @@
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        android:text="@string/text"
+        android:hint="@string/enter_text"
         android:textSize="18sp"
         android:layout_margin="8dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonBack"

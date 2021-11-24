@@ -2,5 +2,5 @@
     <string name="app_name">LabWork2_2_2</string>
     <string name="go_to_activity_2">GO TO Activity 2</string>
     <string name="back">Back</string>
-    <string name="text">text</string>
+    <string name="enter_text">Enter text</string>
 </resources>

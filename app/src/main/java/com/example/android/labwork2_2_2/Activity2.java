@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -22,9 +23,14 @@ public class Activity2 extends AppCompatActivity {
 
         buttonBack.setOnClickListener(v -> {
             Intent intent = new Intent();
-            intent.putExtra(KEY_TEXT,editText.getText().toString());
-            setResult(RESULT_OK, intent);
-            finish();
+            if (editText.getText().toString().isEmpty()) {
+                Toast.makeText(this, "Enter Text", Toast.LENGTH_LONG).show();
+            } else {
+                intent.putExtra(KEY_TEXT,editText.getText().toString());
+                setResult(RESULT_OK, intent);
+                finish();
+            }
+
         });
 
     }
